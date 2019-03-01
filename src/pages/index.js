@@ -1,20 +1,24 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
-  <Layout>
+const TextWrapper = styled.div`
+  min-height: 62vh;
+  margin: 0;
+  padding: 13rem 0 0 12rem;
+  color: white;
+`;
+
+const IndexPage = ({ location }) => (
+  <Layout location={location.pathname}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <TextWrapper>
+      <h1>Hello, world !</h1>
+      <h2>I'm Diogo Cardoso, a full-stack web developer.</h2>
+      <p>I make amazing, modern websites.</p>
+    </TextWrapper>
   </Layout>
 );
 
