@@ -7,7 +7,7 @@ import Navbar from './navbar';
 
 const HeaderWrapper = styled.header`
   background: transparent;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -19,8 +19,8 @@ const HeaderWrapper = styled.header`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
   margin-left: 2rem;
   font-size: 1.5rem;
   font-weight: 700;

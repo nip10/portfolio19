@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat';
+    @media (max-width: 800px) {
+      overflow-y: scroll;
+    }
   }
 `;
 

@@ -7,11 +7,16 @@ const NavList = styled.ul`
   list-style: none;
   padding: 0px;
   margin: 0px;
+  @media (max-width: 650px) {
+    width: 100%;
+    margin: 0 1rem;
+    justify-content: space-around;
+  }
 `;
 
 const NavItem = styled.li`
-  height: 3rem;
-  line-height: 3rem;
+  height: 4rem;
+  line-height: 4rem;
 `;
 
 const NavLink = styled(Link)`
@@ -25,6 +30,11 @@ const NavLink = styled(Link)`
   :hover {
     border-bottom: 3px solid #f0db4f;
   }
+  @media (max-width: 650px) {
+    :last-child {
+      margin: 0;
+    }
+  }
 `;
 
 const Navbar = () => (
@@ -34,6 +44,11 @@ const Navbar = () => (
     </NavItem>
     <NavItem>
       <NavLink to="/projects"> Projects </NavLink>
+    </NavItem>
+    <NavItem>
+      <NavLink as="a" href="https://blog.diogocardoso.me" target="_blank" rel="nofollow noopener">
+        Blog
+      </NavLink>
     </NavItem>
     <NavItem>
       <NavLink to="/contact"> Contact </NavLink>
