@@ -19,9 +19,9 @@ const IndexPage = ({ location }) => (
   <Layout location={location.pathname}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <TextWrapper>
-      <h1> 👋 Hello, world ! </h1>
-      <h2>I'm Diogo Cardoso, a full-stack web developer. 👨‍💻</h2>
-      <p>I make amazing, modern websites. ⚡</p>
+      <h1> 👋 Hi, I'm Diogo! </h1>
+      <h3> 👨‍💻 I'm a web developer based in Porto.</h3>
+      <p> ⚡ Currently on the last year of a masters degree. Available for freelancing/remote jobs. </p>
     </TextWrapper>
   </Layout>
 );

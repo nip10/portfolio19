@@ -17,8 +17,7 @@ const PageTitle = styled.h1`
 `;
 
 const Text = styled.p`
-  color: rgba(25, 25, 25, 0.8);
-  /* letter-spacing: 1px; */
+  color: rgba(25, 25, 25, 0.9);
   line-height: 1.5rem;
 `;
 

@@ -18,7 +18,6 @@ const PageTitle = styled.h1`
 
 const Text = styled.p`
   color: rgba(25, 25, 25, 0.8);
-  /* letter-spacing: 1px; */
   line-height: 1.5rem;
 `;
 
@@ -26,7 +25,7 @@ const AboutPage = ({ location }) => (
   <Layout location={location.pathname}>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
-      <PageTitle> About </PageTitle>
+      <PageTitle> Projects </PageTitle>
       <Text>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat modi facilis dolorum dolores incidunt. A saepe
         cumque velit impedit aperiam distinctio, quo assumenda eaque unde, iure repellendus nemo, ullam amet.
