@@ -5,11 +5,12 @@ import { Link } from 'gatsby';
 const NavList = styled.ul`
   display: flex;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
-  @media (max-width: 650px) {
+  padding: 0;
+  margin: 0;
+  @media (max-width: 730px) {
     width: 100%;
-    margin: 0 1rem;
+    margin: ${props => (props.dark ? '0' : '0 1rem')};
+    background-color: ${props => (props.dark ? '#333' : 'transparent')};
     justify-content: space-around;
   }
 `;
@@ -37,8 +38,8 @@ const NavLink = styled(Link)`
   }
 `;
 
-const Navbar = () => (
-  <NavList>
+const Navbar = ({ dark }) => (
+  <NavList dark={dark}>
     <NavItem>
       <NavLink to="/about"> About </NavLink>
     </NavItem>

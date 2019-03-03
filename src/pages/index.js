@@ -7,14 +7,11 @@ import SEO from '../components/seo';
 const TextWrapper = styled.div`
   min-height: 62vh;
   max-width: 90vw;
-  margin: 0 auto;
-  padding: 13rem 0 0 12rem;
+  margin: 15rem auto 0 auto;
+  padding-left: 5rem;
   color: white;
-  @media (max-width: 800px) {
-    padding: 13rem 0 0 5rem;
-  }
-  @media (max-width: 500px) {
-    padding: 13rem 0 0 2rem;
+  @media (max-width: 730px) {
+    padding-left: 0;
   }
 `;
 

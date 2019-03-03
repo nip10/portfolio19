@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
 import Header from './header';
@@ -14,21 +14,31 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat';
-    @media (max-width: 800px) {
+    @media (max-width: 730px) {
       overflow-y: scroll;
     }
   }
 `;
 
-const Layout = ({ children, location }) => (
-  <>
-    {location === '/' && <Video />}
-    <GlobalStyle />
-    <Header siteTitle="Diogo Cardoso" />
-    <main>{children}</main>
-    <Footer />
-  </>
-);
+const Container = styled.main`
+  margin-top: ${props => (props.isHome ? 0 : '4rem')};
+  @media (max-width: 730px) {
+    margin-top: ${props => (props.isHome ? 0 : '8rem')};
+  }
+`;
+
+const Layout = ({ children, location }) => {
+  const isHome = location === '/';
+  return (
+    <>
+      {isHome && <Video />}
+      <GlobalStyle />
+      <Header siteTitle="Diogo Cardoso" dark={!isHome} />
+      <Container isHome={isHome}>{children}</Container>
+      <Footer dark={location !== '/'} />
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

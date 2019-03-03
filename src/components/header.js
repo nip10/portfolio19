@@ -6,13 +6,13 @@ import styled from 'styled-components';
 import Navbar from './navbar';
 
 const HeaderWrapper = styled.header`
-  background: transparent;
+  background-color: ${props => (props.dark ? '#333' : 'transparent')};
   height: 4rem;
   display: flex;
   justify-content: space-between;
   position: fixed;
   flex-wrap: wrap;
-  top: 0px;
+  top: 0;
   width: 100%;
 `;
 
@@ -26,10 +26,10 @@ const StyledLink = styled(Link)`
   font-weight: 700;
 `;
 
-const Header = ({ siteTitle }) => (
-  <HeaderWrapper>
+const Header = ({ siteTitle, dark }) => (
+  <HeaderWrapper dark={dark}>
     <StyledLink to="/"> {siteTitle} </StyledLink>
-    <Navbar />
+    <Navbar dark={dark} />
   </HeaderWrapper>
 );
 
