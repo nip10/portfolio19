@@ -7,7 +7,7 @@ const NavList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  @media (max-width: 730px) {
+  @media (max-width: 700px) {
     width: 100%;
     margin: ${props => (props.dark ? '0' : '0 1rem')};
     background-color: ${props => (props.dark ? '#333' : 'transparent')};
@@ -50,9 +50,6 @@ const Navbar = ({ dark }) => (
       <NavLink as="a" href="https://blog.diogocardoso.me" target="_blank" rel="nofollow noopener">
         Blog
       </NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink to="/contact"> Contact </NavLink>
     </NavItem>
   </NavList>
 );

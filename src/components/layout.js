@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat';
-    @media (max-width: 730px) {
+    @media (max-width: 700px) {
       overflow-y: scroll;
     }
   }
@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.main`
   margin-top: ${props => (props.isHome ? 0 : '4rem')};
-  @media (max-width: 730px) {
+  @media (max-width: 700px) {
     margin-top: ${props => (props.isHome ? 0 : '8rem')};
   }
 `;
