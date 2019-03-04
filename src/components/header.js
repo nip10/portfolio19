@@ -14,6 +14,7 @@ const HeaderWrapper = styled.header`
   flex-wrap: wrap;
   top: 0;
   width: 100%;
+  z-index: 200;
 `;
 
 const StyledLink = styled(Link)`
