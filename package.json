@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio19",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Diogo Cardoso <diogocardoso92@outlook.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.1.19",
@@ -34,7 +34,10 @@
     "prettier": "^1.16.4"
   },
   "keywords": [
-    "gatsby"
+    "portfolio",
+    "website",
+    "gatsby",
+    "developer"
   ],
   "license": "MIT",
   "scripts": {
@@ -47,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/nip10/portfolio19"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/nip10/portfolio19/issues"
   }
 }
