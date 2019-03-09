@@ -7,11 +7,10 @@ const NavList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 700px) {
-    width: 100%;
-    margin: ${props => (props.dark ? '0' : '0 1rem')};
-    background-color: ${props => (props.dark ? '#333' : 'transparent')};
-    justify-content: space-around;
+    display: none;
   }
 `;
 
@@ -30,11 +29,6 @@ const NavLink = styled(Link)`
   font-weight: 700;
   :hover {
     border-bottom: 3px solid #f0db4f;
-  }
-  @media (max-width: 650px) {
-    :last-child {
-      margin: 0;
-    }
   }
 `;
 

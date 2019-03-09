@@ -1,9 +1,9 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-import Navbar from './navbar';
+import Navigation from './navigation';
 
 const HeaderWrapper = styled.header`
   background-color: ${props => (props.dark ? '#333' : 'transparent')};
@@ -27,19 +27,23 @@ const StyledLink = styled(Link)`
   font-weight: 700;
 `;
 
-const Header = ({ siteTitle, dark }) => (
-  <HeaderWrapper dark={dark}>
-    <StyledLink to="/"> {siteTitle} </StyledLink>
-    <Navbar dark={dark} />
-  </HeaderWrapper>
-);
+const Header = ({ dark, siteTitle }) => {
+  return (
+    <HeaderWrapper dark={dark}>
+      <StyledLink to="/"> {siteTitle} </StyledLink>
+      <Navigation dark={dark} />
+    </HeaderWrapper>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  dark: PropTypes.bool,
 };
 
 Header.defaultProps = {
   siteTitle: ``,
+  dark: true,
 };
 
 export default Header;
