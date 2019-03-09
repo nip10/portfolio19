@@ -2,6 +2,7 @@ import React from 'react';
 
 const ReactIcon = () => (
   <svg
+    key="react-icon-svg"
     xmlns="http://www.w3.org/2000/svg"
     width="40px"
     height="40px"
