@@ -12,7 +12,7 @@ const MenuButtonWrapper = styled.div`
 const MenuButtonLine = styled.div`
   height: 2px;
   width: 20px;
-  background: ${props => props.color};
+  background: white;
   transition: all 0.2s ease;
 `;
 
@@ -38,7 +38,6 @@ export default class MenuButton extends React.Component {
     super(props);
     this.state = {
       open: this.props.open ? this.props.open : false,
-      color: 'white',
     };
   }
 
@@ -63,9 +62,9 @@ export default class MenuButton extends React.Component {
             }
         }
       >
-        <MenuButtonLineTop open={this.state.open} color={this.state.color} />
-        <MenuButtonLineMiddle open={this.state.open} color={this.state.color} />
-        <MenuButtonLineBottom open={this.state.open} color={this.state.color} />
+        <MenuButtonLineTop open={this.state.open} />
+        <MenuButtonLineMiddle open={this.state.open} />
+        <MenuButtonLineBottom open={this.state.open} />
       </MenuButtonWrapper>
     );
   }
