@@ -6,13 +6,14 @@ import getLogo from './stack/index';
 const Wrapper = styled.div`
   margin: 3em 0;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: 'img txt';
   min-height: 400px;
-  @media (max-width: 1024px) {
+  @media (max-width: 900px) {
     margin: 1em 0;
-    grid-template-columns: 100%;
-    grid-template-areas: 'txt';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     min-height: 330px;
   }
 `;
@@ -20,9 +21,8 @@ const Wrapper = styled.div`
 const ImgWrapper = styled.div`
   grid-area: img;
   position: relative;
-  @media (max-width: 1024px) {
-    display: none;
-  }
+  grid-row: 1;
+  grid-column: 1;
 `;
 
 const Img = styled.img`
@@ -40,7 +40,11 @@ const Img = styled.img`
 const TextWrapper = styled.div`
   padding: 4rem 3rem 3rem 3rem;
   grid-area: txt;
-  @media (max-width: 1024px) {
+  grid-row: 1;
+  grid-column: 2;
+  @media (max-width: 900px) {
+    grid-row: 2;
+    grid-column: 1;
     padding: 1rem;
   }
 `;
@@ -55,6 +59,19 @@ const TagsList = styled.div`
   margin: 0;
   padding: 0;
   margin-bottom: 4rem;
+  > * {
+    margin-top: 0.75rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  margin-bottom: 1rem;
+  & :not(:last-child) {
+    margin-right: 1rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -62,6 +79,25 @@ const Title = styled.h2`
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: normal;
+`;
+
+const Button = styled.a`
+  background-color: ${p => (p.type === 'primary' ? '#8A74F7' : 'white')};
+  padding: 0.8em 1em;
+  color: ${p => (p.type === 'primary' ? 'white' : '#8A74F7')};
+  border: none;
+  font-weight: 700;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  font-size: 0.9rem;
+`;
+
+const padding = (top = 0, right = 0, bottom = 0, left = 0) => `${top}rem ${right}rem ${bottom}rem ${left}rem`;
+
+const ButtonImg = styled.img`
+  max-width: 1.5rem;
+  vertical-align: middle;
+  padding: ${p => padding(p.top, p.right, p.bottom, p.left)};
 `;
 
 const Project = ({ title, image, description, stack, demo, repo }) => (

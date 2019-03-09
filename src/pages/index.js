@@ -15,13 +15,17 @@ const TextWrapper = styled.div`
   }
 `;
 
+const HiText = styled.h1`
+  font-size: 3em;
+`;
+
 const IndexPage = ({ location }) => (
   <Layout location={location.pathname}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <TextWrapper>
-      <h1> 👋 Hi, I'm Diogo! </h1>
+      <HiText> 👋 Hi, I'm Diogo! </HiText>
       <h3> 👨‍💻 I'm a web developer based in Porto.</h3>
-      <p> ⚡ Currently on the last year of a masters degree. Available for freelancing/remote jobs. </p>
+      <p> ⚡ Currently on the last year of a masters degree in EE. Available for freelancing/remote jobs. </p>
     </TextWrapper>
   </Layout>
 );

@@ -87,7 +87,7 @@ const FooterText = styled.p`
 `;
 
 const Footer = ({ dark }) => (
-  <footer style={{ color: 'white' }}>
+  <footer>
     <SocialMediaWrapper>
       {socialMedia.map(sm => (
         <a key={sm.name} href={sm.url} target="_blank" rel="nofollow noopener">

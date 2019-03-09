@@ -24,8 +24,8 @@ const AboutPage = ({ location }) => (
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
       <PageTitle> Projects </PageTitle>
-      {projects.map(pj => (
-        <Project {...pj} />
+      {projects.map((pj, i) => (
+        <Project key={i} {...pj} />
       ))}
     </Container>
   </Layout>
