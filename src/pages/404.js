@@ -26,8 +26,8 @@ const NotFoundPage = ({ location }) => (
   <Layout location={location.pathname}>
     <SEO title="404 Not Found" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
-      <PageTitle> 404 - Page not found </PageTitle>
-      <Text> Oooops, the page you are looking for does not exist. </Text>
+      <PageTitle> 404 </PageTitle>
+      <Text> Sorry, the page you tried cannot be found. </Text>
       <Link to="/">Back to Home</Link>
     </Container>
   </Layout>
