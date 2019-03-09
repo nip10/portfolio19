@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ["airbnb-base", "prettier"],
-  plugins: ["prettier", "react"],
+  extends: ["airbnb-base", "prettier", "prettier/react"],
+  plugins: ["prettier", "import", "react"],
   rules: {
     semi: "error",
     // "linebreak-style": [
@@ -14,6 +14,10 @@ module.exports = {
     // react plugin - options
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+
+    // import plugin - options
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
 
     // prettier
     "prettier/prettier": [
