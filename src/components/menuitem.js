@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'gatsby';
 
 const slideIn = keyframes`
   from {
@@ -29,6 +30,15 @@ const shrink = keyframes`
   }
 `;
 
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: #fafafa;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: gray;
+  }
+`;
+
 const MenuItemWrapper = styled.div`
   opacity: 0;
   animation: 1s ${appear} forwards;
@@ -39,9 +49,6 @@ const MenuItemDiv = styled.div`
   font-size: 1.2rem;
   padding: 1rem 0;
   margin: 0 5%;
-  cursor: pointer;
-  color: ${props => (props.hover ? 'gray' : '#fafafa')};
-  transition: color 0.2s ease-in-out;
   animation: 0.5s ${slideIn} forwards;
   animation-delay: ${props => props.delay};
 `;
@@ -55,36 +62,22 @@ const Line = styled.div`
   animation-delay: ${props => props.delay};
 `;
 
-export default class MenuItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false,
-    };
-  }
-
-  handleHover() {
-    this.setState({ hover: !this.state.hover });
-  }
-
-  render() {
-    return (
-      <MenuItemWrapper delay={this.props.delay}>
-        <MenuItemDiv
-          onMouseEnter={() => {
-            this.handleHover();
-          }}
-          onMouseLeave={() => {
-            this.handleHover();
-          }}
-          onClick={this.props.onClick}
-          hover={this.state.hover}
-        >
-          {this.props.children}
-        </MenuItemDiv>
-        <Line />
-      </MenuItemWrapper>
-    );
+const MenuItem = props => (
+  <MenuItemWrapper delay={props.delay}>
+    <MenuItemDiv onClick={props.onClick}>
+      {props.link.url.startsWith('http') ? (
+        <NavLink as="a" href={props.link.url} target="_blank" rel="nofollow noopener" onClick={props.onClick}>
+          {props.link.name}
+        </NavLink>
+      ) : (
+        <NavLink to={props.link.url} onClick={props.onClick}>
+          {props.link.name}
+        </NavLink>
+      )}
+    </MenuItemDiv>
+    <Line />
+  </MenuItemWrapper>
+);
 
 MenuItem.propTypes = {
   delay: PropTypes.string,
