@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import css from './css';
 import html from './html';
 import javascript from './javascript';
@@ -13,6 +12,7 @@ import postgresql from './postgresql';
 import gatsby from './gatsby';
 import styledcomponents from './styledcomponents';
 
+/* eslint-disable indent */
 const getLogo = logoName => {
   switch (logoName) {
     case 'css3':
