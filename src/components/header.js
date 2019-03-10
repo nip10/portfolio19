@@ -18,7 +18,7 @@ const HeaderWrapper = styled.header`
 `;
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: #fafafa;
   text-decoration: none;
   height: 4rem;
   line-height: 4rem;

@@ -9,7 +9,7 @@ const TextWrapper = styled.div`
   max-width: 90vw;
   margin: 15rem auto 0 auto;
   padding-left: 5rem;
-  color: white;
+  color: #fafafa;
   @media (max-width: 700px) {
     padding-left: 0;
   }

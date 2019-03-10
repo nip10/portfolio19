@@ -13,7 +13,7 @@ const MenuButtonWrapper = styled.div`
 const MenuButtonLine = styled.div`
   height: 2px;
   width: 20px;
-  background: white;
+  background: #fafafa;
   transition: all 0.2s ease;
 `;
 

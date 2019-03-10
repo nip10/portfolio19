@@ -84,7 +84,7 @@ const SocialMediaWrapper = styled.div`
 
 const FooterText = styled.p`
   text-align: center;
-  color: ${props => (props.dark ? 'black' : 'white')};
+  color: ${props => (props.dark ? '#333' : '#fafafa')};
 `;
 
 const Footer = ({ dark }) => (

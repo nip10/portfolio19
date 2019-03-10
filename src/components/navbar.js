@@ -21,7 +21,7 @@ const NavItem = styled.li`
 `;
 
 const NavLink = styled(Link)`
-  color: white;
+  color: #fafafa;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;

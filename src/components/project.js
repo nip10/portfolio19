@@ -83,9 +83,9 @@ const Title = styled.h2`
 `;
 
 const Button = styled.a`
-  background-color: ${p => (p.type === 'primary' ? '#8A74F7' : 'white')};
+  background-color: ${p => (p.type === 'primary' ? '#8A74F7' : '#fafafa')};
   padding: 0.8em 1em;
-  color: ${p => (p.type === 'primary' ? 'white' : '#8A74F7')};
+  color: ${p => (p.type === 'primary' ? '#fafafa' : '#8A74F7')};
   border: none;
   font-weight: 700;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
