@@ -3,7 +3,7 @@ const projects = [
     title: 'Euromillions Notify',
     description:
       'Get an email notification when the euromillions prize is above a pre-defined threshold. Parses XML data from Santa Casa and runs a cronjob before the bi-weekly drafts. ',
-    stack: ['HTML5', 'CSS3', 'Typescript', 'React', 'NodeJS', 'MongoDB'],
+    stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
     demo: 'https://p.diogocardoso.me/todo',
@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'URL Shortener',
     description: "Shorten url's with social sharing.",
-    stack: ['HTML5', 'CSS3', 'Typescript', 'React'],
+    stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
     demo: 'https://p.diogocardoso.me/todo',
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Todo's Manager",
     description: "Front-end for managing todo's.",
-    stack: ['HTML5', 'CSS3', 'Typescript', 'React'],
+    stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
     demo: 'https://p.diogocardoso.me/todo',
@@ -44,7 +44,7 @@ const projects = [
     title: 'Tvshow Manager',
     description:
       "Manage your favourite tvshows and discover new ones. Relies on the TheTVDB API to get tvshow's information.",
-    stack: ['HTML5', 'CSS3', 'JavaScript', 'NodeJS', 'PostgreSQL', 'Express', 'SocketIO'],
+    stack: ['Pug', 'JavaScript', 'Sass', 'NodeJS', 'PostgreSQL', 'Express'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/tvshows-manager',
     demo: 'https://p.diogocardoso.me/tsm',
