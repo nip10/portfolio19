@@ -5,12 +5,10 @@ import bgvideomp4 from '../assets/bgvideo.mp4';
 import bgvideowebm from '../assets/bgvideo.webm';
 
 const VideoWrapper = styled.video`
-  /* opacity: 0.2; */
   position: fixed;
   top: 0;
   min-width: 100vw;
   min-height: 100vh;
-  /* width: auto; */
   height: auto;
   z-index: -100;
   left: 50%;
