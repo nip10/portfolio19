@@ -7,6 +7,8 @@ import MenuButton from './menubutton';
 import Menu from './menu';
 import Navbar from './navbar';
 
+import navigationLinks from '../data/navigation';
+
 const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
@@ -32,25 +34,19 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <NavWrapper>
-        <Navbar dark={this.props.dark} />
+        <Navbar dark={this.props.dark} links={navigationLinks} />
         <MenuButton open={this.state.menuOpen} onClick={() => this.handleMenuClick()} />
         <Menu open={this.state.menuOpen}>
-          <MenuItem
-            delay={'0.1s'}
-            onClick={() => {
-              this.handleLinkClick();
-            }}
-          >
-            About
-          </MenuItem>
-          <MenuItem
-            delay={'0.2s'}
-            onClick={() => {
-              this.handleLinkClick();
-            }}
-          >
-            Projects
-          </MenuItem>
+          {navigationLinks.map((el, i) => (
+            <MenuItem
+              key={i}
+              delay={`${i * 0.1}s`}
+              onClick={() => {
+                this.handleLinkClick();
+              }}
+              link={el}
+            />
+          ))}
         </Menu>
       </NavWrapper>
     );

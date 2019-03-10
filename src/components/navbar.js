@@ -33,19 +33,19 @@ const NavLink = styled(Link)`
   }
 `;
 
-const Navbar = ({ dark }) => (
+const Navbar = ({ dark, links }) => (
   <NavList dark={dark}>
-    <NavItem>
-      <NavLink to="/about"> About </NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink to="/projects"> Projects </NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink as="a" href="https://blog.diogocardoso.me" target="_blank" rel="nofollow noopener">
-        Blog
-      </NavLink>
-    </NavItem>
+    {links.map((el, i) => (
+      <NavItem key={i}>
+        {el.url.startsWith('http') ? (
+          <NavLink as="a" href={el.url} target="_blank" rel="nofollow noopener">
+            {el.name}
+          </NavLink>
+        ) : (
+          <NavLink to={el.url}>{el.name}</NavLink>
+        )}
+      </NavItem>
+    ))}
   </NavList>
 );
 
