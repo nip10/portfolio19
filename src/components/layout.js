@@ -22,10 +22,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.main`
-  margin-top: ${props => (props.isHome ? 0 : '4rem')};
+  margin-top: 4rem;
   min-height: ${props => (props.isHome ? 'calc(100vh - 4rem - 6rem - 15rem)' : 'calc(100vh - 4rem - 6rem)')};
   @media (max-width: 700px) {
-    margin-top: ${props => (props.isHome ? 0 : '8rem')};
+    margin-top: ${props => (props.isHome ? 0 : '4rem')};
   }
 `;
 

@@ -10,7 +10,7 @@ import projects from '../data/projects';
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   min-height: 60vh;
 `;
 

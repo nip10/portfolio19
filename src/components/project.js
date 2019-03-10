@@ -10,12 +10,11 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'img txt';
-  min-height: 400px;
+  min-height: 300px;
   @media (max-width: 900px) {
-    margin: 1em 0;
+    margin: 2em 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    min-height: 330px;
   }
 `;
 
@@ -27,43 +26,37 @@ const ImgWrapper = styled.div`
 `;
 
 const Img = styled.img`
-  display: block;
-  padding: 1rem;
-  box-sizing: border-box;
   max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `;
 
 const TextWrapper = styled.div`
-  padding: 4rem 3rem 3rem 3rem;
   grid-area: txt;
   grid-row: 1;
   grid-column: 2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 1rem;
   @media (max-width: 900px) {
     grid-row: 2;
     grid-column: 1;
-    padding: 1rem;
+    margin-left: 0;
   }
 `;
 
 const Description = styled.p`
   text-align: justify;
-  margin-top: 0;
-  margin-bottom: 3rem;
+  margin: 0;
+  padding: 0;
 `;
 
 const TagsList = styled.div`
   margin: 0;
   padding: 0;
-  margin-bottom: 4rem;
   > * {
     margin-top: 0.75rem;
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
   }
 `;
@@ -77,8 +70,7 @@ const ButtonWrapper = styled.div`
 
 const Title = styled.h2`
   font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
   font-weight: normal;
 `;
 
