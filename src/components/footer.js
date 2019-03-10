@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const socialMedia = [
@@ -98,5 +99,9 @@ const Footer = ({ dark }) => (
     <FooterText dark={dark}> Diogo Cardoso &copy; {new Date().getFullYear()} </FooterText>
   </footer>
 );
+
+Footer.propTypes = {
+  dark: PropTypes.bool,
+};
 
 export default Footer;

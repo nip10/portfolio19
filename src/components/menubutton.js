@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const MenuButtonWrapper = styled.div`
@@ -69,3 +70,7 @@ export default class MenuButton extends React.Component {
     );
   }
 }
+
+MenuButton.propTypes = {
+  onClick: PropTypes.func,
+};

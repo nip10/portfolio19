@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import MenuItem from './menuitem';
 import MenuButton from './menubutton';
@@ -55,3 +56,7 @@ export default class Navigation extends React.Component {
     );
   }
 }
+
+Navigation.propTypes = {
+  dark: PropTypes.bool,
+};

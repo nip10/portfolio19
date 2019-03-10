@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 const slideIn = keyframes`
@@ -84,5 +85,11 @@ export default class MenuItem extends React.Component {
         <Line />
       </MenuItemWrapper>
     );
-  }
-}
+
+MenuItem.propTypes = {
+  delay: PropTypes.string,
+  onClick: PropTypes.func,
+  link: PropTypes.object,
+};
+
+export default MenuItem;

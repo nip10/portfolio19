@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const MenuWrapper = styled.div`
@@ -38,3 +39,7 @@ export default class Menu extends React.Component {
     );
   }
 }
+
+Menu.propTypes = {
+  children: PropTypes.node.isRequired,
+};

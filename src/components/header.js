@@ -41,9 +41,4 @@ Header.propTypes = {
   dark: PropTypes.bool,
 };
 
-Header.defaultProps = {
-  siteTitle: ``,
-  dark: true,
-};
-
 export default Header;

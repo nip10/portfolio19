@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -47,5 +48,10 @@ const Navbar = ({ dark }) => (
     </NavItem>
   </NavList>
 );
+
+Navbar.propTypes = {
+  dark: PropTypes.bool,
+  links: PropTypes.object,
+};
 
 export default Navbar;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import getLogo from './stack/index';
 
@@ -112,5 +113,14 @@ const Project = ({ title, image, description, stack, demo, repo }) => (
     </TextWrapper>
   </Wrapper>
 );
+
+Project.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string,
+  description: PropTypes.string,
+  stack: PropTypes.array,
+  demo: PropTypes.string,
+  repo: PropTypes.string,
+};
 
 export default Project;
