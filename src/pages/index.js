@@ -25,7 +25,6 @@ const IndexPage = ({ location }) => (
     <TextWrapper>
       <HiText> 👋 Hi, I'm Diogo! </HiText>
       <h3> 👨‍💻 I'm a web developer based in Porto.</h3>
-      <p> ⚡ Currently on the last year of a masters degree in EE. Available for freelancing/remote jobs. </p>
     </TextWrapper>
   </Layout>
 );
