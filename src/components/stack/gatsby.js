@@ -2,6 +2,7 @@ import React from 'react';
 
 const Gatsby = () => (
   <svg
+    data-tip="Gatsby"
     key="gatsby-icon-svg"
     xmlns="http://www.w3.org/2000/svg"
     width="40px"

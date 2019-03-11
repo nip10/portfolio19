@@ -2,6 +2,7 @@ import React from 'react';
 
 const Postgresql = () => (
   <svg
+    data-tip="PostgreSQL"
     key="postgresql-icon-svg"
     xmlns="http://www.w3.org/2000/svg"
     width="40px"

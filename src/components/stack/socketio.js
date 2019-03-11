@@ -2,6 +2,7 @@ import React from 'react';
 
 const Socketio = () => (
   <svg
+    data-tip="SocketIO"
     key="socketio-icon-svg"
     xmlns="http://www.w3.org/2000/svg"
     width="40px"

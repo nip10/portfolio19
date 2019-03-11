@@ -2,6 +2,7 @@ import React from 'react';
 
 const Express = () => (
   <svg
+    data-tip="Express"
     height="40"
     viewBox="0 0 120 60"
     width="80"

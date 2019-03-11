@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import ReactTooltip from 'react-tooltip';
 
 import getLogo from './stack/index';
 
@@ -102,6 +103,7 @@ const Project = ({ title, image, description, stack, demo, repo }) => (
       <Title> {title} </Title>
       <Description> {description} </Description>
       <TagsList>{stack.map(el => getLogo(el.toLowerCase()))}</TagsList>
+      <ReactTooltip place="bottom" effect="solid" />
     </TextWrapper>
   </Wrapper>
 );

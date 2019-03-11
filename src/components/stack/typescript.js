@@ -2,6 +2,7 @@ import React from 'react';
 
 const Typescript = () => (
   <svg
+    data-tip="TypeScript"
     key="typescript-icon-svg"
     xmlns="http://www.w3.org/2000/svg"
     width="40px"

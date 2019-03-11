@@ -8,7 +8,14 @@ const Img = styled.img`
 `;
 
 const StyledComponents = () => {
-  return <Img key="styledcomponents-icon-svg" src={styledcomponentslogo} alt="Styled Components Logo" />;
+  return (
+    <Img
+      data-tip="Styled Components"
+      key="styledcomponents-icon-svg"
+      src={styledcomponentslogo}
+      alt="Styled Components Logo"
+    />
+  );
 };
 
 export default StyledComponents;
