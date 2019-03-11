@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "10"
+sudo: false
+cache:
+  yarn: true
+  directories:
+    - node_modules
+script:
+  - yarn
+  - yarn build
+deploy:
+  provider: s3
+  access_key_id:
+    secure: ScXunjYOlMwhNxRAXfuwSfal8dMnu+5vSpVGtFjHKQ72vLQKDxFjp11QvoQNRnn9OO8GP1oj9D7WzY1CwD85D2kr113T0b20fWS5Eth5oegCn5sKzyiFGtHoA0srdGaJNvy3dcNZP4n0/jsAX+haauFlkTWVtjx+AyTyQn2S862QFhke07FN4FSCYjA+n20k7ulZDSgo4DV6IZjlMX4aznm8td25gkXZBgHmrQNqR/n4igDQqi8zZyxQCo8KnfuCoa7gZNxH/1hcw/6BzsOg5b6Vym8G3GI51FD5zqweEPDs2yqazY7XuheaX99U541lLqXpb5ShxnssjNL9QR6VERJy61fY/fYw1/VvorsRP1RS6peX2pouAn1Jga9vExVNhmRPdgeipWzbUG5E8+PCsKoz5vD2UB1dMOriXIipv0CHuurVEv6guSo5bUBi+0hl21x7Ul6IcEcp+WBF3Mm2u5aeqfxaYqH6ZHUcNHF/r8MBJUHW9flr2SXk0TTFNmcoKgql2/udHv294LTtXv5LX4xssXer/ifqktnQkJV6SWuOEFlGLoSkaOGHcPQfOAhcAPjuS/6rAr9Zw32qtkIO05+z4z9XLVcd/QZ2vzZ+imeQL8h9YiVtkjyEmM9rSA+34FoQ6yyYHkGCiF5XZqrJyYM2nLTlQgVx9AZXMMtRkkM=
+  secret_access_key:
+    secure: Vz4MS2Bu+rEUTVB42MQd9qllU61SR0jQTOMOPgqC8wnu0cNGm0uMiCYHUFEkwsL9/Y7pdHaOdg+6dcZZV0xnqOpHpMcqshhvSk2L8XZ5MQ3XkeFOZmfn3zL/moTteI+odOO90iqRMWIm/4pCAHIqraEVXL+KhRHCPAncW5cr4wKJVyjd89SfUonQcgXWokCnIxYMUQkYZ/Tq6q1PWGrcNDDVSkc2OGZ+i8VFBjaWPboX4K2L/CZcR255zCPgFMvJIjfB7mGPqKfVNIvX21H+jnwFKWjiAsrT6aQcM3TkqDKezKVLPsfSavYJZp3uJjgSzdBMhMwHXG35Ud3QurVQBly3h22Vr3xbzOCyOH1JOAOzM4RkOqK0hDwCcHrlqH5pbEJVj1f/nq2+CovLLBEhOoYBUJ0fLn9XMiYxgp6raEhmH9LkQ0wd5HQFg+VgRwJqVzu3av/cu7IHaHWHdQl67e6sk6AUAKmNFvpItkL0Ya5j99I1Gde+n0rXaPgXPmPecnfXGitx7Pj2x3jPcb5FzxpqIpCCcQVKyISBXVKSughb/467V7/9knFq7wmQtc4DnYrl/gVCilGcx5PgPyW19ekB4sB11xgqZOQUDLpAb/ZIwVaJOlquG6LqtG16BuGvw6CRD8VUGYO/IK+TKqzuW3RSehau4Qa7GYga7ctQT4Y=
+  bucket: diogocardoso.me
+  skip_cleanup: true
+  region: eu-west-2
+  local_dir: public
+notifications:
+  email: false
