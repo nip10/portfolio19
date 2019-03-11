@@ -51,7 +51,7 @@ const Navbar = ({ dark, links }) => (
 
 Navbar.propTypes = {
   dark: PropTypes.bool,
-  links: PropTypes.object,
+  links: PropTypes.array,
 };
 
 export default Navbar;
