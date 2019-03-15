@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import cv from '../assets/cv.pdf';
+
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
@@ -45,7 +47,7 @@ const AboutPage = ({ location }) => (
       </Text>
       <Text>My 3 main interests are web-development, automation (IoT, Industrial) and project management.</Text>
       <Text>
-        My resumé is available <Link href="cv.pdf">here</Link>.
+        My resumé is available <Link href={cv}>here</Link>.
       </Text>
     </Container>
   </Layout>
