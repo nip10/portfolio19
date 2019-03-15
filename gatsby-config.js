@@ -9,13 +9,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Diogo Cardoso`,
+        short_name: `DC`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#f0db4f`,
+        theme_color: `#f0db4f`,
+        display: `standalone`,
+        icon: `src/assets/logo.png`, // This path is relative to the root of the site.
+        include_favicon: true, // Include favicon
       },
     },
     'gatsby-plugin-styled-components',
@@ -28,11 +29,11 @@ module.exports = {
             subsets: [`latin`],
             variants: ['400', '700'],
           },
-          {
-            family: `Open Sans`,
-            subsets: [`latin`],
-            variants: [`400`, `700`],
-          },
+          // {
+          //   family: `Open Sans`,
+          //   subsets: [`latin`],
+          //   variants: [`400`, `700`],
+          // },
         ],
       },
     },
