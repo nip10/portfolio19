@@ -54,6 +54,7 @@ const Description = styled.p`
 const TagsList = styled.div`
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
   > * {
     margin-top: 0.75rem;
     &:not(:last-child) {
@@ -64,7 +65,7 @@ const TagsList = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-bottom: 1rem;
-  & :not(:last-child) {
+  & a:not(:last-child) {
     margin-right: 1rem;
   }
 `;
@@ -76,22 +77,15 @@ const Title = styled.h2`
 `;
 
 const Button = styled.a`
-  background-color: ${p => (p.type === 'primary' ? '#8A74F7' : '#fafafa')};
+  background-color: ${p => (p.type === 'primary' ? '#333' : '#fafafa')};
   padding: 0.8em 1em;
-  color: ${p => (p.type === 'primary' ? '#fafafa' : '#8A74F7')};
+  color: ${p => (p.type === 'primary' ? '#fafafa' : '#333')};
   border: none;
   font-weight: 700;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   font-size: 0.9rem;
-`;
-
-const padding = (top = 0, right = 0, bottom = 0, left = 0) => `${top}rem ${right}rem ${bottom}rem ${left}rem`;
-
-const ButtonImg = styled.img`
-  max-width: 1.5rem;
-  vertical-align: middle;
-  padding: ${p => padding(p.top, p.right, p.bottom, p.left)};
+  width: 4rem;
 `;
 
 const Project = ({ title, image, description, stack, demo, repo }) => (
@@ -103,6 +97,14 @@ const Project = ({ title, image, description, stack, demo, repo }) => (
       <Title> {title} </Title>
       <Description> {description} </Description>
       <TagsList>{stack.map(el => getLogo(el.toLowerCase()))}</TagsList>
+      <ButtonWrapper>
+        <Button href={repo} target="_blank" rel="noopener noreferrer">
+          Repo
+        </Button>
+        <Button href={demo} type="primary" target="_blank" rel="noopener noreferrer">
+          Demo
+        </Button>
+      </ButtonWrapper>
       <ReactTooltip place="bottom" effect="solid" />
     </TextWrapper>
   </Wrapper>
