@@ -1,12 +1,20 @@
 const projects = [
   {
+    title: 'Blog',
+    description: 'A personal blog mostly about my areas of interest, namely: IoT, Automation, Web-Development.',
+    stack: ['Javascript', 'React', 'Gatsby'],
+    image: 'https://via.placeholder.com/500x300',
+    repo: 'https://github.com/nip10/blog',
+    demo: 'https://blog.diogocardoso.me',
+  },
+  {
     title: 'Euromillions Notify',
     description:
       'Get an email notification when the euromillions prize is above a pre-defined threshold. Parses XML data from Santa Casa and runs a cronjob before the bi-weekly drafts. ',
     stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://p.diogocardoso.me/todo',
+    demo: 'https://euronotify.diogocardoso.me',
   },
   {
     title: 'URL Shortener',
@@ -14,7 +22,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://p.diogocardoso.me/todo',
+    demo: 'https://sh.diogocardoso.me',
   },
   {
     title: "Todo's Manager",
@@ -22,7 +30,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://p.diogocardoso.me/todo',
+    demo: 'https://todo.diogocardoso.me',
   },
   {
     title: 'Todo api',
@@ -30,7 +38,7 @@ const projects = [
     stack: ['JavaScript', 'Typescript', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-api',
-    demo: 'https://p.diogocardoso.me/todo/api',
+    // demo: 'https://p.diogocardoso.me/todo/api',
   },
   {
     title: 'Chat',
@@ -38,7 +46,7 @@ const projects = [
     stack: ['HTML5', 'CSS3', 'JavaScript', 'NodeJS', 'Express', 'SocketIO'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/node-chat-app',
-    demo: 'https://p.diogocardoso.me/chat',
+    demo: 'https://chat.diogocardoso.me',
   },
   {
     title: 'Tvshow Manager',
@@ -47,7 +55,7 @@ const projects = [
     stack: ['Pug', 'JavaScript', 'Sass', 'NodeJS', 'PostgreSQL', 'Express'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/tvshows-manager',
-    demo: 'https://p.diogocardoso.me/tsm',
+    // demo: 'https://p.diogocardoso.me/tsm',
   },
   {
     title: 'Telegram Bot',
@@ -71,7 +79,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/portfolio',
-    demo: 'https://diogocardoso.me',
+    demo: 'https://diogocardoso.me/old',
   },
 ];
 
