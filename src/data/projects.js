@@ -30,7 +30,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://todo.diogocardoso.me',
+    demo: 'https://api.todo.diogocardoso.me',
   },
   {
     title: 'Todo api',
