@@ -30,7 +30,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://api.todo.diogocardoso.me',
+    demo: 'https://todo.diogocardoso.me',
   },
   {
     title: 'Todo api',
@@ -38,7 +38,7 @@ const projects = [
     stack: ['JavaScript', 'Typescript', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/todo-api',
-    // demo: 'https://p.diogocardoso.me/todo/api',
+    demo: 'https://api.todo.diogocardoso.me',
   },
   {
     title: 'Chat',
@@ -79,7 +79,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/portfolio',
-    demo: 'https://diogocardoso.me/old',
+    // demo: 'https://diogocardoso.me/old',
   },
 ];
 
