@@ -98,12 +98,16 @@ const Project = ({ title, image, description, stack, demo, repo }) => (
       <Description> {description} </Description>
       <TagsList>{stack.map(el => getLogo(el.toLowerCase()))}</TagsList>
       <ButtonWrapper>
-        <Button href={repo} target="_blank" rel="noopener noreferrer">
-          Repo
-        </Button>
-        <Button href={demo} type="primary" target="_blank" rel="noopener noreferrer">
-          Demo
-        </Button>
+        {repo && (
+          <Button href={repo} target="_blank" rel="noopener noreferrer">
+            Repo
+          </Button>
+        )}
+        {demo && (
+          <Button href={demo} type="primary" target="_blank" rel="noopener noreferrer">
+            Demo
+          </Button>
+        )}
       </ButtonWrapper>
       <ReactTooltip place="bottom" effect="solid" />
     </TextWrapper>
