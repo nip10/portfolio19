@@ -9,7 +9,7 @@ const HeaderWrapper = styled.header`
   background-color: ${props => (props.dark ? '#333' : 'transparent')};
   height: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: ${props => (!props.isHome ? 'space-between' : 'flex-end')};
   position: fixed;
   flex-wrap: wrap;
   top: 0;
@@ -27,10 +27,10 @@ const StyledLink = styled(Link)`
   font-weight: 700;
 `;
 
-const Header = ({ dark, siteTitle }) => {
+const Header = ({ dark, siteTitle, isHome }) => {
   return (
-    <HeaderWrapper dark={dark}>
-      <StyledLink to="/"> {siteTitle} </StyledLink>
+    <HeaderWrapper dark={dark} isHome={isHome}>
+      {!isHome && <StyledLink to="/"> {siteTitle} </StyledLink>}
       <Navigation dark={dark} />
     </HeaderWrapper>
   );
@@ -39,6 +39,7 @@ const Header = ({ dark, siteTitle }) => {
 Header.propTypes = {
   siteTitle: PropTypes.string,
   dark: PropTypes.bool,
+  isHome: PropTypes.bool,
 };
 
 export default Header;

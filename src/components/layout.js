@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.main`
   margin-top: 4rem;
-  min-height: ${props => (props.isHome ? 'calc(100vh - 4rem - 6rem - 15rem)' : 'calc(100vh - 4rem - 6rem)')};
+  max-height: ${props => (props.isHome ? 'calc(100vh - 4rem - 6rem - 15rem)' : 'calc(100vh - 4rem - 6rem)')};
   @media (max-width: 700px) {
     margin-top: ${props => (props.isHome ? 0 : '4rem')};
   }
@@ -35,7 +35,7 @@ const Layout = ({ children, location }) => {
     <>
       {isHome && <Video />}
       <GlobalStyle />
-      <Header siteTitle="Diogo Cardoso" dark={!isHome} />
+      <Header siteTitle="Diogo Cardoso" dark={!isHome} isHome={isHome} />
       <Container isHome={isHome}>{children}</Container>
       <Footer dark={!isHome} />
     </>
