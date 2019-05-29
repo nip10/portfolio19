@@ -21,6 +21,7 @@ const PageTitle = styled.h1`
 const Text = styled.p`
   color: #090909;
   line-height: 1.5rem;
+  text-align: justify;
 `;
 
 const Link = styled.a`
@@ -36,18 +37,38 @@ const AboutPage = ({ location }) => (
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
       <PageTitle> About </PageTitle>
-      <Text>My name is Diogo and I'm a full-stack web-developer. Currently based in Porto, Portugal.</Text>
+      <Text>
+        My name is <strong>Diogo</strong> and I'm a <strong>full-stack web-developer</strong>. Currently based in{' '}
+        <strong>Porto, Portugal.</strong>
+      </Text>
       <Text>
         I'm passionate about building web apps with clean, tested and maintainable code, using the latest technologies.
         I have an aptitude for problem solving and a hunger for continuous improvement. I am looking to work as part of
         a team where I can contribute to meaningful projects, while learning from my peers. I work primarily with a
         JavaScript/TypeScript stack: NodeJS for back-end and React for front-end - but picking up new languages or
-        frameworks is not a problem. I'm currently in the final year of a Masters degree in Electrical & Computer
-        Engineering (Automation branch) at FEUP.
+        frameworks is not a problem.
       </Text>
-      <Text>My 3 main interests are web-development, automation (IoT, Industrial) and project management.</Text>
       <Text>
-        My resumé is available <Link href={cv}>here</Link>.
+        I'm currently in the final year of a Masters degree in Electrical & Computer Engineering (Automation branch) at{' '}
+        <strong>
+          <Link href="https://sigarra.up.pt/feup/en/cur_geral.cur_view?pv_ano_lectivo=2016&pv_curso_id=741&pv_origem=CUR&pv_tipo_cur_sigla=">
+            FEUP
+          </Link>
+        </strong>
+        . I'm also working on my Master thesis at{' '}
+        <strong>
+          <Link href="https://www.wegho.com">Wegho</Link>
+        </strong>{' '}
+        - "Framework for data ingestion and processing" - doing a mix of full-stack web dev (TS, NodeJS, React), Google
+        Cloud Architect and DevOps.
+      </Text>
+      <Text>My 3 main areas of interest are web-development, automation (IoT, Industrial) and project management.</Text>
+      <Text>
+        My resumé is available{' '}
+        <strong>
+          <Link href={cv}>here</Link>
+        </strong>
+        .
       </Text>
     </Container>
   </Layout>
