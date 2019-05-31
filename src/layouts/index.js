@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
-import Header from './header';
-import Footer from './footer';
-import Video from './video';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Video from '../components/video';
+import Transition from '../components/transition';
 
 const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
@@ -36,7 +37,9 @@ const Layout = ({ children, location }) => {
       {isHome && <Video />}
       <GlobalStyle />
       <Header siteTitle="Diogo Cardoso" dark={!isHome} isHome={isHome} />
-      <Container isHome={isHome}>{children}</Container>
+      <Container isHome={isHome}>
+        <Transition location={location}>{children}</Transition>
+      </Container>
       <Footer dark={!isHome} />
     </>
   );
