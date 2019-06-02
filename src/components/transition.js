@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { TransitionGroup, Transition as ReactTransition } from 'react-transition-group';
 
 // This variable will be responsible for our animation duration
@@ -53,5 +54,10 @@ class Transition extends React.PureComponent {
     );
   }
 }
+
+Transition.propTypes = {
+  children: PropTypes.node.isRequired,
+  location: PropTypes.object.isRequired,
+};
 
 export default Transition;

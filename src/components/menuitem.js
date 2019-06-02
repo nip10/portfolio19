@@ -80,9 +80,9 @@ const MenuItem = props => (
 );
 
 MenuItem.propTypes = {
-  delay: PropTypes.string,
+  delay: PropTypes.string.isRequired,
   onClick: PropTypes.func,
-  link: PropTypes.object,
+  link: PropTypes.object.isRequired,
 };
 
 export default MenuItem;

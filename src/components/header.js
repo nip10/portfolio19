@@ -38,8 +38,8 @@ const Header = ({ dark, siteTitle, isHome }) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-  dark: PropTypes.bool,
-  isHome: PropTypes.bool,
+  dark: PropTypes.bool.isRequired,
+  isHome: PropTypes.bool.isRequired,
 };
 
 export default Header;

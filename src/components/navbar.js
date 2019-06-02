@@ -50,8 +50,8 @@ const Navbar = ({ dark, links }) => (
 );
 
 Navbar.propTypes = {
-  dark: PropTypes.bool,
-  links: PropTypes.array,
+  dark: PropTypes.bool.isRequired,
+  links: PropTypes.array.isRequired,
 };
 
 export default Navbar;
