@@ -24,7 +24,7 @@ module.exports = {
         theme_color: `#f0db4f`,
         display: `standalone`,
         icon: `src/assets/logo.png`, // This path is relative to the root of the site.
-        include_favicon: true, // Include favicon
+        include_favicon: true,
       },
     },
     'gatsby-plugin-styled-components',

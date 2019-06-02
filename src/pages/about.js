@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../layouts';
 import SEO from '../components/seo';
 
 import cv from '../assets/cv.pdf';
 
 const Container = styled.div`
   margin: 0 auto;
+  margin-top: 4rem;
   max-width: 960px;
   padding: 2rem;
-  min-height: 60vh;
+  /* min-height: 60vh; */
 `;
 
 const PageTitle = styled.h1`
@@ -32,8 +32,8 @@ const Link = styled.a`
   }
 `;
 
-const AboutPage = ({ location }) => (
-  <Layout location={location.pathname}>
+const AboutPage = () => (
+  <>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <Container>
       <PageTitle> About </PageTitle>
@@ -71,7 +71,7 @@ const AboutPage = ({ location }) => (
         .
       </Text>
     </Container>
-  </Layout>
+  </>
 );
 
 export default AboutPage;
