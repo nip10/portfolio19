@@ -20,7 +20,7 @@ const PageTitle = styled.h1`
 
 const AboutPage = () => (
   <>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" keywords={[]} />
     <Container>
       <PageTitle> Projects </PageTitle>
       {projects.map((pj, i) => (

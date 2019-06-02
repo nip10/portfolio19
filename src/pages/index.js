@@ -29,7 +29,7 @@ const HiText = styled.h1`
 
 const IndexPage = () => (
   <>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[]} />
     <Container>
       <Video />
       <TextWrapper>

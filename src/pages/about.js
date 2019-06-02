@@ -34,7 +34,7 @@ const Link = styled.a`
 
 const AboutPage = () => (
   <>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" keywords={[]} />
     <Container>
       <PageTitle> About </PageTitle>
       <Text>
