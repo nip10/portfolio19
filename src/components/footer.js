@@ -101,7 +101,7 @@ const Footer = ({ dark }) => (
 );
 
 Footer.propTypes = {
-  dark: PropTypes.bool,
+  dark: PropTypes.bool.isRequired,
 };
 
 export default Footer;

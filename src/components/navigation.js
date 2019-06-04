@@ -54,5 +54,5 @@ export default class Navigation extends React.Component {
 }
 
 Navigation.propTypes = {
-  dark: PropTypes.bool,
+  dark: PropTypes.bool.isRequired,
 };

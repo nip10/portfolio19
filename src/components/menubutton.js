@@ -59,8 +59,8 @@ export default class MenuButton extends React.Component {
           this.props.onClick
             ? this.props.onClick
             : () => {
-              this.handleClick();
-            }
+                this.handleClick();
+              }
         }
       >
         <MenuButtonLineTop open={this.state.open} />
@@ -73,4 +73,5 @@ export default class MenuButton extends React.Component {
 
 MenuButton.propTypes = {
   onClick: PropTypes.func,
+  open: PropTypes.bool,
 };

@@ -42,4 +42,5 @@ export default class Menu extends React.Component {
 
 Menu.propTypes = {
   children: PropTypes.node.isRequired,
+  open: PropTypes.bool,
 };

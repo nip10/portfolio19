@@ -6,6 +6,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
+    'gatsby-plugin-layout',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,7 +24,7 @@ module.exports = {
         theme_color: `#f0db4f`,
         display: `standalone`,
         icon: `src/assets/logo.png`, // This path is relative to the root of the site.
-        include_favicon: true, // Include favicon
+        include_favicon: true,
       },
     },
     'gatsby-plugin-styled-components',

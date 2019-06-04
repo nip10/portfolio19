@@ -115,10 +115,10 @@ const Project = ({ title, image, description, stack, demo, repo }) => (
 );
 
 Project.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   image: PropTypes.string,
-  description: PropTypes.string,
-  stack: PropTypes.array,
+  description: PropTypes.string.isRequired,
+  stack: PropTypes.array.isRequired,
   demo: PropTypes.string,
   repo: PropTypes.string,
 };

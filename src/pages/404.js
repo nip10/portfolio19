@@ -1,9 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import SEO from "../components/seo";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -22,15 +21,15 @@ const Text = styled.p`
   line-height: 1.5rem;
 `;
 
-const NotFoundPage = ({ location }) => (
-  <Layout location={location.pathname}>
-    <SEO title="404 Not Found" keywords={[`gatsby`, `application`, `react`]} />
+const NotFoundPage = () => (
+  <>
+    <SEO title="404 Not Found" keywords={[]} />
     <Container>
       <PageTitle> 404 </PageTitle>
       <Text> Sorry, the page you tried cannot be found. </Text>
       <Link to="/">Back to Home</Link>
     </Container>
-  </Layout>
+  </>
 );
 
 export default NotFoundPage;
