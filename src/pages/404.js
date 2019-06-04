@@ -1,6 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+
+import SEO from "../components/seo";
 
 const Container = styled.div`
   margin: 0 auto;
