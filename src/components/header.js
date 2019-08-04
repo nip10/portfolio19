@@ -9,7 +9,7 @@ const HeaderWrapper = styled.header`
   background-color: ${props => (props.dark ? '#333' : 'transparent')};
   height: 4rem;
   display: flex;
-  justify-content: ${props => (!props.isHome ? 'space-between' : 'flex-end')};
+  justify-content: ${props => (props.isHome ? 'flex-end' : 'space-between')};
   position: fixed;
   flex-wrap: wrap;
   top: 0;
