@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Diogo Cardoso <diogocardoso92@outlook.com>",
   "dependencies": {
-    "gatsby": "^2.13.73",
+    "gatsby": "^2.18.10",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-google-analytics": "^2.1.8",
     "gatsby-plugin-layout": "^1.1.4",
