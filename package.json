@@ -6,7 +6,7 @@
   "author": "Diogo Cardoso <diogocardoso92@outlook.com>",
   "dependencies": {
     "gatsby": "^2.13.73",
-    "gatsby-image": "^2.2.10",
+    "gatsby-image": "^2.2.34",
     "gatsby-plugin-google-analytics": "^2.1.8",
     "gatsby-plugin-layout": "^1.1.4",
     "gatsby-plugin-manifest": "^2.2.6",
