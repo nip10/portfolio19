@@ -730,6 +730,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.7.6":
+  version "7.7.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.6.tgz#d18c511121aff1b4f2cd1d452f1bac9601dd830f"
+  integrity sha512-BWAJxpNVa0QlE5gZdWjSxXtemZyZ9RmrmVozxt3NUXeZhVIJ5ANyqmMc0JDrivBZyxUuQvFxlvH4OWWOogGfUw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -5286,12 +5293,12 @@ gatsby-plugin-sharp@^2.2.13:
     sharp "^0.22.1"
     svgo "^1.2.0"
 
-gatsby-plugin-styled-components@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.2.tgz#1f8ab130e2fdc02fbc8b158b237e7f620d15c2a9"
-  integrity sha512-9MjGXl5ddN2L7jKlSjrobtxbR1gIIpBOmFcfkmNPdL/7rMUkWR6bLmAQ6fUPGCIwTLyvYsNjBZhtAwhUY+NTBw==
+gatsby-plugin-styled-components@^3.1.14:
+  version "3.1.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.1.16.tgz#143e3f4b8114ae57e05c3ebbb5d6c7ec10cbb054"
+  integrity sha512-ixvMwMCYm70iC23+zkMBmQPNX0UmmumzK+1TtK3LSYicdaXXz7dychaBdiljKD4WMNraXYx49JuZS01yjOZiOw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.7.6"
 
 gatsby-react-router-scroll@^2.1.4:
   version "2.1.4"
