@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import SEO from "../components/seo";
-import Video from "../components/video";
+import SEO from '../components/seo';
+import Video from '../components/video';
 
 const Container = styled.main`
   margin-top: 4rem;
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <Video />
       <TextWrapper>
         <HiText> 👋 Hi, I'm Diogo! </HiText>
-        <h2> 👨‍💻 I'm a web developer based in Porto.</h2>
+        <h2> 👨‍💻 I'm a full-stack web developer based in Porto, Portugal.</h2>
       </TextWrapper>
     </Container>
   </>

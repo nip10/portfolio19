@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
-import logo from "../assets/logo.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
+import logo from '../assets/logo.png';
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:url`,
-          content: "https://www.diogocardoso.me",
+          content: 'https://www.diogocardoso.me',
         },
         {
           property: `og:description`,
@@ -74,8 +74,8 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: { logo },
         },
         {
-          name: "google-site-verification",
-          content: "eCdIyuxJXGfuYnjqw-BeiT27UNerBKDAljfkiQBbgIo",
+          name: 'google-site-verification',
+          content: 'eCdIyuxJXGfuYnjqw-BeiT27UNerBKDAljfkiQBbgIo',
         },
       ]
         .concat(

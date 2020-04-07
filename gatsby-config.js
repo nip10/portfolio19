@@ -3,14 +3,14 @@ module.exports = {
     title: `Diogo Cardoso`,
     description: `Full-stack web developer based in Portugal. Masters in Electrical Engineering - Automation.`,
     author: `Diogo Cardoso`,
-    siteUrl: "https://www.diogocardoso.me",
+    siteUrl: 'https://www.diogocardoso.me',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-layout",
+    'gatsby-plugin-layout',
     `gatsby-plugin-sitemap`,
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,12 +19,12 @@ module.exports = {
         start_url: `/`,
         background_color: `#f0db4f`,
         theme_color: `#f0db4f`,
-        display: `standalone`,
+        display: `minimal-ui`,
         icon: `src/assets/logo.png`, // This path is relative to the root of the site.
         include_favicon: true,
       },
     },
-    "gatsby-plugin-styled-components",
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -32,7 +32,7 @@ module.exports = {
           {
             family: `Montserrat`,
             subsets: [`latin`],
-            variants: ["400", "700"],
+            variants: ['400', '700'],
           },
           // {
           //   family: `Open Sans`,
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-136029200-1",
+        trackingId: 'UA-136029200-1',
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -66,6 +66,6 @@ module.exports = {
         // cookieDomain: "example.com",
       },
     },
-    "gatsby-plugin-offline",
+    'gatsby-plugin-offline',
   ],
 };
