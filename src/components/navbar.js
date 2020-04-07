@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const NavList = styled.ul`
   display: flex;
@@ -37,8 +37,8 @@ const Navbar = ({ dark, links }) => (
   <NavList dark={dark}>
     {links.map((el, i) => (
       <NavItem key={i}>
-        {el.url.startsWith('http') ? (
-          <NavLink as="a" href={el.url} target="_blank" rel="nofollow noopener">
+        {el.url.startsWith("http") ? (
+          <NavLink as="a" href={el.url} target="_blank" rel="noopener">
             {el.name}
           </NavLink>
         ) : (

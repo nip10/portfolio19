@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import SEO from '../components/seo';
-import Video from '../components/video';
+import SEO from "../components/seo";
+import Video from "../components/video";
 
 const Container = styled.main`
   margin-top: 4rem;
@@ -24,7 +24,7 @@ const TextWrapper = styled.div`
 `;
 
 const HiText = styled.h1`
-  font-size: 3em;
+  font-size: 3rem;
 `;
 
 const IndexPage = () => (
@@ -34,7 +34,7 @@ const IndexPage = () => (
       <Video />
       <TextWrapper>
         <HiText> 👋 Hi, I'm Diogo! </HiText>
-        <h3> 👨‍💻 I'm a web developer based in Porto.</h3>
+        <h2> 👨‍💻 I'm a web developer based in Porto.</h2>
       </TextWrapper>
     </Container>
   </>
