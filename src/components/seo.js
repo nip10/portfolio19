@@ -43,7 +43,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:url`,
-          content: 'https://www.diogocardoso.me',
+          content: 'https://www.diogocardoso.dev',
         },
         {
           property: `og:description`,

@@ -13,7 +13,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: euroImg,
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://euronotify.diogocardoso.me',
+    demo: 'https://euronotify.diogocardoso.dev',
   },
   {
     title: 'URL Shortener',
@@ -21,7 +21,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: shImg,
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://sh.diogocardoso.me',
+    demo: 'https://sh.diogocardoso.dev',
   },
   {
     title: "Todo's Manager",
@@ -29,7 +29,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: todoImg,
     repo: 'https://github.com/nip10/todo-react-ts',
-    demo: 'https://todo.diogocardoso.me',
+    demo: 'https://todo.diogocardoso.dev',
   },
   {
     title: 'Todo api',
@@ -37,7 +37,7 @@ const projects = [
     stack: ['JavaScript', 'Typescript', 'NodeJS', 'Express', 'MongoDB', 'Jest'],
     image: apiImg,
     repo: 'https://github.com/nip10/todo-api',
-    demo: 'https://api.todo.diogocardoso.me',
+    demo: 'https://api.todo.diogocardoso.dev',
   },
   {
     title: 'Chat',
@@ -45,7 +45,7 @@ const projects = [
     stack: ['HTML5', 'CSS3', 'JavaScript', 'NodeJS', 'Express', 'SocketIO'],
     image: chatImg,
     repo: 'https://github.com/nip10/node-chat-app',
-    demo: 'https://chat.diogocardoso.me',
+    demo: 'https://chat.diogocardoso.dev',
   },
   {
     title: 'Tvshow Manager',
@@ -54,7 +54,7 @@ const projects = [
     stack: ['Pug', 'JavaScript', 'Sass', 'NodeJS', 'PostgreSQL', 'Express'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/tvshows-manager',
-    // demo: 'https://p.diogocardoso.me/tsm',
+    // demo: 'https://p.diogocardoso.dev/tsm',
   },
   {
     title: 'Telegram Bot',
@@ -70,7 +70,7 @@ const projects = [
     stack: ['Javascript', 'React', 'Gatsby'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/blog',
-    demo: 'https://blog.diogocardoso.me',
+    demo: 'https://blog.diogocardoso.dev',
   },
   {
     title: 'Portfolio v2',
@@ -78,7 +78,7 @@ const projects = [
     stack: ['JavaScript', 'React', 'Styled Components', 'Gatsby'],
     image: portfolioImg,
     repo: 'https://github.com/nip10/portfolio19',
-    demo: 'https://diogocardoso.me',
+    demo: 'https://diogocardoso.dev',
   },
   {
     title: 'Portfolio',
@@ -86,7 +86,7 @@ const projects = [
     stack: ['Typescript', 'React', 'Styled Components'],
     image: 'https://via.placeholder.com/500x300',
     repo: 'https://github.com/nip10/portfolio',
-    // demo: 'https://diogocardoso.me/old',
+    // demo: 'https://diogocardoso.dev/old',
   },
 ];
 

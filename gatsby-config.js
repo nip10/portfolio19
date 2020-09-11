@@ -3,7 +3,7 @@ module.exports = {
     title: `Diogo Cardoso`,
     description: `Full-stack web developer based in Portugal. Masters in Electrical Engineering - Automation.`,
     author: `Diogo Cardoso`,
-    siteUrl: 'https://www.diogocardoso.me',
+    siteUrl: 'https://www.diogocardoso.dev',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

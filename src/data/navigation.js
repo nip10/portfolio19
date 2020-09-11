@@ -9,7 +9,7 @@ const navigationLinks = [
   },
   {
     name: 'Blog',
-    url: 'https://blog.diogocardoso.me/',
+    url: 'https://blog.diogocardoso.dev/',
   },
 ];
 
