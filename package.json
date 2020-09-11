@@ -25,7 +25,8 @@
     "react-tooltip": "^4.1.5",
     "react-transition-group": "^4.3.0",
     "styled-components": "^4.3.2",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "snyk": "^1.393.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -41,7 +42,9 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -49,5 +52,6 @@
   },
   "bugs": {
     "url": "https://github.com/nip10/portfolio19/issues"
-  }
+  },
+  "snyk": true
 }
